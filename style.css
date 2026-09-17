@@ -1,0 +1,416 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 32px 16px;
+  background: #dff3ff;
+  color: #334155;
+  font-family: "Segoe UI", Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.profile-photo {
+  width: 244px;
+  height: 244px;
+  margin-bottom: 16px;
+  border: 5.6px solid #ffffff;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 12px 24px rgb(30 41 59 / 15%);
+}
+
+.section-nav {
+  width: 100%;
+  margin-bottom: 16px;
+  padding: 12px 16px;
+  border: 1px solid #dbe3f0;
+  border-radius: 12px;
+  background: #ffffff;
+  box-shadow: 0 8px 20px rgb(30 41 59 / 10%);
+}
+
+.section-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.section-nav li {
+  flex: 1 1 0;
+  text-align: center;
+}
+
+.section-nav a {
+  display: block;
+  background: #ffffff;
+  color: #1d4ed8;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.section-nav a:hover,
+.section-nav a:focus-visible {
+  color: #3730a3;
+  text-decoration: underline;
+}
+
+.profile-card {
+  width: 100%;
+  position: relative;
+  top: -18px;
+  padding: 48px 40px;
+  border: 1px solid #dbe3f0;
+  border-radius: 20px;
+  background: #ffffff;
+  box-shadow: 0 16px 40px rgb(30 41 59 / 12%);
+  text-align: center;
+}
+
+.skills-section {
+  width: 100%;
+  margin-top: 8px;
+  padding: 28px 32px;
+  border: 1px solid #dbe3f0;
+  border-radius: 20px;
+  background: #ffffff;
+  box-shadow: 0 16px 40px rgb(30 41 59 / 12%);
+  text-align: center;
+}
+
+.skills-section h2 {
+  margin: 0;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.skills-list li {
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: #e0e7ff;
+  color: #3730a3;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.projects-section {
+  width: 100%;
+  margin-top: 16px;
+  padding: 28px 32px;
+  border: 1px solid #dbe3f0;
+  border-radius: 20px;
+  background: #ffffff;
+  box-shadow: 0 16px 40px rgb(30 41 59 / 12%);
+  text-align: center;
+}
+
+.projects-section h2 {
+  margin: 0;
+}
+
+.project-list {
+  display: grid;
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.project {
+  padding: 18px;
+  border: 1px solid #e0e7ff;
+  border-radius: 12px;
+  background: #f8faff;
+}
+
+.project h3 {
+  margin: 0;
+  color: #172554;
+  font-size: 30px;
+}
+
+.project p {
+  margin: 8px 0 0;
+  font-size: 14px;
+}
+
+.graphic-design-project {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+
+.graphic-design-project img {
+  width: 96px;
+  height: 128px;
+  flex: 0 0 auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.graphic-design-project div {
+  flex: 0 1 420px;
+}
+
+.favorites-section {
+  width: 100%;
+  margin-top: 16px;
+  padding: 28px 32px;
+  border: 1px solid #dbe3f0;
+  border-radius: 20px;
+  background: #ffffff;
+  box-shadow: 0 16px 40px rgb(30 41 59 / 12%);
+  text-align: center;
+}
+
+.favorites-section h2 {
+  margin: 0;
+}
+
+.favorites-list {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin: 20px 0 0;
+  padding: 0;
+  overflow-x: auto;
+  color: #475569;
+  list-style: none;
+}
+
+.favorites-list li {
+  min-width: 160px;
+  padding: 12px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  background: #f8faff;
+  text-align: center;
+  transition: transform 160ms ease, border-color 160ms ease, box-shadow 160ms ease;
+}
+
+.favorites-list li:hover {
+  border-color: #c7d2fe;
+  box-shadow: 0 8px 16px rgb(30 41 59 / 12%);
+  transform: translateY(-3px);
+}
+
+.favorites-list img {
+  display: block;
+  width: 100%;
+  height: 100px;
+  margin-bottom: 8px;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+.contact-section {
+  width: 100%;
+  margin-top: 16px;
+  padding: 28px 32px;
+  border: 1px solid #dbe3f0;
+  border-radius: 20px;
+  background: #ffffff;
+  box-shadow: 0 16px 40px rgb(30 41 59 / 12%);
+  text-align: center;
+}
+
+.contact-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+}
+
+.contact-content > div {
+  flex: 1 1 auto;
+}
+
+.contact-image {
+  width: 96px;
+  height: 120px;
+  flex: 0 0 auto;
+  border-radius: 8px;
+  object-fit: contain;
+}
+
+.contact-image-link {
+  padding: 0 !important;
+  background: transparent !important;
+  line-height: 0;
+}
+
+.contact-section h2 {
+  margin: 0;
+}
+
+.contact-section p {
+  margin: 12px 0 0;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.contact-links a {
+  padding: 8px 16px;
+  border-radius: 8px;
+  background: #4f46e5;
+  color: #ffffff;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.contact-links a:hover {
+  background: #3730a3;
+}
+
+h1 {
+  margin: 0;
+  color: #172554;
+  font-size: clamp(36px, 8vw, 56px);
+  line-height: 1.1;
+}
+
+h2 {
+  margin: 12px 0 0;
+  color: #f28b82;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+h4 {
+  margin: 1px 0;
+  font-size: 30px;
+}
+
+.role {
+  margin: 5px 0 10px;
+  color: #1d4ed8;
+  font-size: 17.6px;
+  font-weight: 700;
+}
+
+.profile-card p:not(.role) {
+  margin: 12px 0 0;
+}
+
+.current-role-section {
+  width: 100%;
+  margin-top: -16px;
+  padding: 28px 32px;
+  border: 1px solid #dbe3f0;
+  border-radius: 20px;
+  background: #ffffff;
+  text-align: center;
+}
+
+.current-role-section h2 {
+  margin: 0;
+}
+
+.canvasser-role {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 16px;
+}
+
+.canvasser-role img {
+  width: 96px;
+  height: 96px;
+  flex: 0 0 auto;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.canvasser-role div {
+  flex: 0 1 420px;
+}
+
+.current-role-section h3 {
+  margin: 16px 0 0;
+  color: #172554;
+  font-size: 22px;
+}
+
+.current-role-section p {
+  margin: 12px 0 0;
+}
+
+@media (max-width: 480px) {
+  .profile-card {
+    padding: 36px 24px;
+  }
+
+  .skills-section {
+    padding: 24px 20px;
+  }
+
+  .projects-section {
+    padding: 24px 20px;
+  }
+
+  .favorites-section {
+    padding: 24px 20px;
+  }
+
+  .contact-section {
+    padding: 24px 20px;
+  }
+
+  .current-role-section {
+    padding: 24px 20px;
+  }
+
+  .contact-content {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .graphic-design-project {
+    gap: 14px;
+  }
+
+  .graphic-design-project img {
+    width: 64px;
+    height: 86px;
+  }
+
+  .graphic-design-project div {
+    flex: 1;
+  }
+
+  .canvasser-role {
+    gap: 14px;
+  }
+
+  .canvasser-role img {
+    width: 64px;
+    height: 64px;
+  }
+
+  .canvasser-role div {
+    flex: 1;
+  }
+}
